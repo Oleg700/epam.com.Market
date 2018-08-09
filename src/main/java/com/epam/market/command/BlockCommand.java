@@ -12,13 +12,17 @@ public class BlockCommand implements ActionCommand {
     private static final String ATTRIBUTE_NAME_CURRENT_PAGE = "currentPage";
     @Override
     public String execute(HttpServletRequest request) {
-       String login = request.getParameter(PARAM_NAME_LOGIN);
+      blockUser(request);
+        return  ConfigurationManager.getProperty(PROPERTY_NAME_PATH);
+    }
+
+    private void blockUser(HttpServletRequest request){
+        String login = request.getParameter(PARAM_NAME_LOGIN);
         CustomerDAOImpl customersDAO = new CustomerDAOImpl();
         customersDAO.blockCustomerByLogin(login);
         String InfoMessage = "customer with login"+login+"is blocked";
         request.setAttribute(ATTRIBUTE_NAME_INFO, InfoMessage);
         final HttpSession session = request.getSession();
         session.setAttribute(ATTRIBUTE_NAME_CURRENT_PAGE,PROPERTY_NAME_PATH);
-        return  ConfigurationManager.getProperty(PROPERTY_NAME_PATH);
     }
 }

@@ -20,26 +20,44 @@ public class RegistrationOrderCommand implements  ActionCommand {
 
     @Override
     public String execute(HttpServletRequest request) {
+       String path = null;
+        if (!checkLoginPassword(request)){
+            request.setAttribute(ATTRIBUTE_NAME_ERROR_LOGIN, MessageManager.getProperty(ATTRIBUTE_NAME_ERROR_LOGIN));
+            path = ConfigurationManager.getProperty(PATH);
+        }
+          else {
+            registerOrder(request);
+            path = ConfigurationManager.getProperty(PROPERTY_NAME_PATH);
+        }
+
+            return path;
+        }
+
+    private Boolean checkLoginPassword(HttpServletRequest request){
+    Boolean check = true;
         int password = 0;
-        Order order = new Order();
-        OrderDAOImpl ordersDAO = new OrderDAOImpl();
-        CustomerDAOImpl customersDAO = new CustomerDAOImpl();
         HttpSession session = request.getSession(true);
         String login = (String) session.getAttribute(PARAM_NAME_LOGIN);
         if(session.getAttribute(PARAM_NAME_PASSWORD) != null){
-        password = (int) session.getAttribute(PARAM_NAME_PASSWORD);
+            password = (int) session.getAttribute(PARAM_NAME_PASSWORD);
         }
         if (login == null && password ==0){
-            request.setAttribute(ATTRIBUTE_NAME_ERROR_LOGIN, MessageManager.getProperty(ATTRIBUTE_NAME_ERROR_LOGIN));
-            return  ConfigurationManager.getProperty(PATH);
-        } else {
-            int  customerId = customersDAO.getCustomerIdByLogin(login);
-            int productId= Integer.parseInt(request.getParameter(PARAM_NAME_PRODUCT_ID));
-            order.setProductId(productId).setCustomerId(customerId);
-            ordersDAO.add(order);
-            LOGGER.info("new order is registered, " + " id of customer " + customerId + " login  " + login + " product_id " + productId);
-            session.setAttribute(ATTRIBUTE_NAME_CURRENT_PAGE,PROPERTY_NAME_PATH);
-            return  ConfigurationManager.getProperty(PROPERTY_NAME_PATH);
+            check= false;
         }
+        return check;
+    }
+
+    private void registerOrder(HttpServletRequest request){
+        Order order = new Order();
+        OrderDAOImpl ordersDAO = new OrderDAOImpl();
+        HttpSession session = request.getSession(true);
+        String login = (String) session.getAttribute(PARAM_NAME_LOGIN);
+        CustomerDAOImpl customersDAO = new CustomerDAOImpl();
+        int  customerId = customersDAO.getCustomerIdByLogin(login);
+        int productId= Integer.parseInt(request.getParameter(PARAM_NAME_PRODUCT_ID));
+        order.setProductId(productId).setCustomerId(customerId);
+        ordersDAO.add(order);
+        LOGGER.info("new order is registered, " + " id of customer " + customerId + " login  " + login + " product_id " + productId);
+        session.setAttribute(ATTRIBUTE_NAME_CURRENT_PAGE,PROPERTY_NAME_PATH);
     }
 }

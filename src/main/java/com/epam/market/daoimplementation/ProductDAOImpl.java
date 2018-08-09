@@ -5,7 +5,6 @@ import com.epam.market.model.Product;
 import com.epam.market.database.ConnectionPool;
 import com.epam.market.model.ProductTranslation;
 import org.apache.log4j.Logger;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

@@ -7,18 +7,21 @@ import java.util.List;
 
 public class ProductCommand implements ActionCommand {
     private static final String PARAM_NAME_CATEGORY = "category";
+    private static final String PARAM_NAME_CATEGORY_ID = "categoryId";
     private static final String PROPERTY_NAME_PATH = "path.page.products";
     private static final String ATTRIBUTE_NAME_LIST_PRODUCTS = "listOfProducts";
     private static final String PARAM_NAME_LANGUAGE_ID = "languageId";
     private static final String ATTRIBUTE_NAME_CURRENT_PAGE = "currentPage";
+    private static final String ATTRIBUTE_NAME_SELECT_PRODUCTS= "selectProducts";
     private static final String PARAM_NAME_COMMAND = "command";
 
     @Override
     public String execute(HttpServletRequest request) {
         int categoryId = Integer.parseInt(request.getParameter(PARAM_NAME_CATEGORY));
         final HttpSession session = request.getSession();
-        session.setAttribute("categoryId",categoryId );
-      return selectProducts(request, categoryId);
+        session.setAttribute(PARAM_NAME_CATEGORY_ID,categoryId );
+        String path =  selectProducts(request, categoryId);
+        return path;
     }
 
     public String selectProducts(HttpServletRequest request, int categoryId){
@@ -29,7 +32,7 @@ public class ProductCommand implements ActionCommand {
         List listOfProducts =  productTranslationDAO.selectProductsByLangCateg(categoryId,lang);
         request.setAttribute(ATTRIBUTE_NAME_LIST_PRODUCTS,listOfProducts);
         session.setAttribute(ATTRIBUTE_NAME_CURRENT_PAGE,PROPERTY_NAME_PATH);
-        request.setAttribute(PARAM_NAME_COMMAND, "selectProducts");
+        request.setAttribute(PARAM_NAME_COMMAND, ATTRIBUTE_NAME_SELECT_PRODUCTS);
         return ConfigurationManager.getProperty(PROPERTY_NAME_PATH);
     }
 

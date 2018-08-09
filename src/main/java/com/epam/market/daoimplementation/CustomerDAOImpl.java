@@ -4,7 +4,6 @@ import com.epam.market.dao.CustomerDAO;
 import com.epam.market.model.Customer;
 import com.epam.market.database.ConnectionPool;
 import org.apache.log4j.Logger;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -140,8 +139,8 @@ public class CustomerDAOImpl implements CustomerDAO {
     }
 
     private String getPathByRole(ResultSet resultSet) throws SQLException {
-        String path=null;
-        String role=null;
+        String path= null;
+        String role= null;
         while (resultSet.next()) {
             role = resultSet.getString("role");
         }

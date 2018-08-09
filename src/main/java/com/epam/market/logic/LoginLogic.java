@@ -1,6 +1,8 @@
 package com.epam.market.logic;
 import com.epam.market.dao.CustomerDAO;
 
+import javax.servlet.http.HttpServletRequest;
+
 public class LoginLogic {
     private CustomerDAO customerDAO;
 
@@ -16,6 +18,8 @@ public class LoginLogic {
     public boolean isLoginValid(String login, int password) {
      return customerDAO.isLoginValid(login,password);
     }
+
+
     }
 
 

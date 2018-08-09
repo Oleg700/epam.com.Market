@@ -22,6 +22,11 @@ public class AdditionProductCommand implements ActionCommand{
   private static final String ATTRIBUTE_NAME_CURRENT_PAGE = "currentPage";
         @Override
         public String execute(HttpServletRequest request) {
+            addProduct(request);
+            return ConfigurationManager.getProperty(PARAM_NAME_PATH_JSP);
+        }
+
+        private void addProduct(HttpServletRequest request){
             ProductDAOImpl daoProduct  = new ProductDAOImpl();
             Product product= new Product();
             ProductTranslation productsTranslationEn = new ProductTranslation();
@@ -49,7 +54,9 @@ public class AdditionProductCommand implements ActionCommand{
             request.setAttribute(PARAM_NAME_PRODUCT_TITLE, productTitleEn);
             final HttpSession session = request.getSession();
             session.setAttribute(ATTRIBUTE_NAME_CURRENT_PAGE,PARAM_NAME_PATH_JSP );
-            return ConfigurationManager.getProperty(PARAM_NAME_PATH_JSP);
         }
+
+
+
     }
 

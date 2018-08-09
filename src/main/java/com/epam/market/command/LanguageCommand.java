@@ -14,9 +14,9 @@ public class LanguageCommand implements ActionCommand  {
     @Override
     public String execute(HttpServletRequest request) {
         final HttpSession session = request.getSession();
-        String setLanguage =   request.getParameter(PARAM_NAME_LANGUAGE);
-        String setLanguageId =   request.getParameter(PARAM_NAME_LANGUAGE_ID);
-        String setLocale =   request.getParameter(PARAM_NAME_LOCALE);
+        String setLanguage = request.getParameter(PARAM_NAME_LANGUAGE);
+        String setLanguageId = request.getParameter(PARAM_NAME_LANGUAGE_ID);
+        String setLocale = request.getParameter(PARAM_NAME_LOCALE);
         session.setAttribute(PARAM_NAME_LANGUAGE_ID,setLanguageId);
         session.setAttribute(PARAM_NAME_LANGUAGE,setLanguage);
         session.setAttribute(PARAM_NAME_LOCALE,setLocale);

@@ -13,7 +13,7 @@ public class CustomerCommand implements  ActionCommand {
     @Override
     public String execute(HttpServletRequest request) {
         CustomerDAOImpl customersDAO  = new CustomerDAOImpl();
-        List listOfCustomers =  customersDAO.getAllCustomers();
+        List listOfCustomers = customersDAO.getAllCustomers();
         request.setAttribute(ATTRIBUTE_NAME_LIST,listOfCustomers);
         final HttpSession session = request.getSession();
         session.setAttribute(ATTRIBUTE_NAME_CURRENT_PAGE,PROPERTY_NAME_PATH);
