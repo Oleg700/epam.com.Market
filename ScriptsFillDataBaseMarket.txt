@@ -1,0 +1,133 @@
+INSERT INTO category (category_title) VALUES ("Notebooks");
+INSERT INTO category (category_title) VALUES ("Phones");
+INSERT INTO category (category_title) VALUES ("Camera");
+
+INSERT INTO producer (producer_title) VALUES ("Apple");
+INSERT INTO producer (producer_title) VALUES ("Samsung");
+INSERT INTO producer (producer_title) VALUES ("Dell");
+INSERT INTO producer (producer_title) VALUES ("Lenovo");
+INSERT INTO producer (producer_title) VALUES ("Nikon");
+INSERT INTO producer (producer_title) VALUES ("Canon");
+
+INSERT INTO language (language_title) VALUES ("english");
+INSERT INTO language (language_title) VALUES ("russian");
+
+
+
+
+INSERT INTO product (price,category_id, producer_id ) VALUES(329900,2,1);
+
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (1, 1,"Iphone 8", "Dimensions 138.4 x 67.3 x 7.3 mm 
+Weight	148 g (5.22 oz)
+Build	Front/back glass, aluminum frame
+SIM	Nano-SIM");
+
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (1, 2,"Iphone 8", "Размер экрана дюйм: 4.7
+ Разрешение экрана: 1334 x 750
+ Тип матрицы: IPS Retina
+Объем оперативной памяти: 2 Гб
+Объем встроенной памяти: 256 Гб
+Модель процессора: A11 Bionic");
+
+
+INSERT INTO product (price,category_id, producer_id ) VALUES(200000,2,1);
+
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (2, 1,"Iphone 7", "Type LED-backlit IPS LCD, capacitive touchscreen, 16M colors
+Size 4.7 inches, 60.9 cm2 (~65.4% screen-to-body ratio)
+Resolution 750 x 1334 pixels, 16:9 ratio (~326 ppi density)
+Multitouch Yes");
+
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (2, 2,"Iphone 7", "Размер экрана, дюйм: 4.0
+Разрешение экрана: 1136 x 640 [16:9]
+Тип матрицы: IPS, Retina
+Объем оперативной памяти: 2 Гб
+Объем встроенной памяти: 32 Гб");
+
+
+INSERT INTO product (price,category_id, producer_id ) VALUES(250000,2,2);
+
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (3, 1,"Samsung Galaxy J1", "Type LED-backlit IPS LCD, capacitive touchscreen, 16M colors
+Size 4.7 inches, 60.9 cm2 (~65.4% screen-to-body ratio)
+Resolution 750 x 1334 pixels, 16:9 ratio (~326 ppi density)");
+
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (3, 2,"Samsung Galaxy J1", "Размер экрана, дюйм: 4.0
+Разрешение экрана: 1136 x 640 [16:9]
+Тип матрицы: IPS, Retina
+Объем оперативной памяти: 4 Гб
+Объем встроенной памяти: 64 Гб");
+
+
+
+INSERT INTO product (price,category_id, producer_id ) VALUES(250000,1,3);
+
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (4, 1,"Dell E72", "7th Generation Intel Core i5-7300HQ Quad Core
+8GB RAM (upgradeable to 32GB)
+NVIDIA GeForce GTX 1050 with 4GB GDDR5");
+
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (4, 2,"Dell E72", "Процессор: Intel Core i5
+Модель процессора: 5300U
+Частота процессора, ГГц: 2.3
+Объем оперативной памяти: 8 Гб
+SSD: 256 Гб");
+
+
+
+INSERT INTO product (price,category_id, producer_id ) VALUES(250000,1,4);
+
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (5, 1,"Lenovo Yoga 720", "7th Generation Intel Core i5-7300HQ Quad Core
+8GB RAM (upgradeable to 32GB)
+NVIDIA GeForce GTX 1050 with 4GB GDDR5");
+
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (5, 2,"Lenovo Yoga 720", "Процессор: Intel Core i7
+Модель процессора: 7700HQ
+Частота процессора, ГГц: 2.8
+Объем оперативной памяти: 8 Гб
+SSD: 512 Гб");
+
+
+
+INSERT INTO product (price,category_id, producer_id ) VALUES(351900,3,6);
+
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (6, 1,"Canon EOS-7D Body", "18MP APS-C CMOS sensor
+8 frames per second continuous shooting
+1080p HD video recording with manual controls
+3.0 inch Clear View II LCD screen with 920,000 dots
+19-point AF system (all cross-type)
+100% viewfinder coverage");
+
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (6, 2,"Canon EOS-7D Body", "Тип оборудования: Зеркальный (DSLR) фотоаппарат
+Тип матрицы: СMOS
+Видеорежим: Есть
+Размер ЖК-дисплея: 3.0");
+
+
+
+
+
+INSERT INTO product (price,category_id, producer_id ) VALUES(400900,3,5);
+
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (7, 1,"Nikon D3400 Kit", "18MP APS-C CMOS sensor
+8 frames per second continuous shooting
+1080p HD video recording with manual controls
+3.0 inch Clear View II LCD screen with 920,000 dots
+19-point AF system (all cross-type)
+100% viewfinder coverage");
+
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (7, 2,"Nikon D3400 Kit", "Тип оборудования: Зеркальный (DSLR) фотоаппарат
+Тип матрицы: СMOS
+Размер MOS/CMOS матрицы: 23.5 х 15.6 мм
+Светосила: f/3.5 - 5.6
+Кратность оптического увеличения: 3.0");
+
+
+
+
+
+
+
+
+
+
+
+INSERT INTO customer (customer_name, customer_surname, login, password, email, access, role) VALUES("Semen", "Semenov","user", "3599307", "user@mail.ru", "allowed","user"); 
+INSERT INTO customer (customer_name, customer_surname, login, password, email, access, role) VALUES("Pavel", "Petrov","admin", "92668751", "pavel14@mail.ru", "allowed","admin");
