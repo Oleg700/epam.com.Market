@@ -25,7 +25,7 @@ public class ProductDAOImpl implements ProductDAO {
             connection.commit();
         } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.error("Error adding a product to database"+e);
+            LOGGER.error("Error adding a product to database",e);
         }
     }
 
@@ -40,7 +40,7 @@ public class ProductDAOImpl implements ProductDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.error("Error getting a a last porduct id from database"+e);
+            LOGGER.error("Error getting a a last porduct id from database",e);
         }
         return lastId;
     }
@@ -55,7 +55,7 @@ public class ProductDAOImpl implements ProductDAO {
             statement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.error("Error adding a product to database"+e);
+            LOGGER.error("Error adding a product to database",e);
         }
     }
 }
