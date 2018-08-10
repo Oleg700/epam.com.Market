@@ -41,7 +41,7 @@ public class ProductTranslationDAOImpl implements ProductTranslationDAO {
             statement.execute();
         } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.error("Error adding a translation of product to database"+e);
+            LOGGER.error("Error adding a translation of product to database",e);
         }
     }
 
@@ -56,7 +56,7 @@ public class ProductTranslationDAOImpl implements ProductTranslationDAO {
          listOfTranslateProducts =  selectProductsByLangCategResultSet(resultSet);
         } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.error("Error selecting a product by language to database"+e);
+            LOGGER.error("Error selecting a product by language to database",e);
         }
         return listOfTranslateProducts;
     }
