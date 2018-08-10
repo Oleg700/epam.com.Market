@@ -32,7 +32,7 @@ public class ConnectionPool {
         } catch (InterruptedException e) {
             e.printStackTrace();
             Thread.currentThread().interrupt();
-            LOGGER.error("thread interrupted by getting connection from connection pool"+e);
+            LOGGER.error("thread interrupted by getting connection from connection pool",e);
         }
         return (connection);
     }
@@ -43,7 +43,7 @@ public class ConnectionPool {
         try {
             Class.forName("com.mysql.jdbc.Driver");
         } catch (ClassNotFoundException e) {
-            LOGGER.error("Error Class.forName(com.mysql.jdbc.Driver) is not found"+e);
+            LOGGER.error("Error Class.forName(com.mysql.jdbc.Driver) is not found",e);
             e.printStackTrace();
         }
         String url = DBManager.getProperty("db.url");
@@ -60,11 +60,11 @@ public class ConnectionPool {
                 blockingQueue.put(makeConnection());
             } catch (SQLException e) {
                 e.printStackTrace();
-                LOGGER.error("Error putting connection to blocking queue"+e);
+                LOGGER.error("Error putting connection to blocking queue",e);
             } catch (InterruptedException e) {
                 e.printStackTrace();
                 Thread.currentThread().interrupt();
-                LOGGER.error("thread interrupted, when it fills connection pool"+e);
+                LOGGER.error("thread interrupted, when it fills connection pool",e);
             }
         }
 
