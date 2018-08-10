@@ -28,7 +28,7 @@ public class CustomerDAOImpl implements CustomerDAO {
             addCustomerStatement(statement, customer);
         } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.error("Error adding a customer to database"+e);
+            LOGGER.error("Error adding a customer to database",e);
 
         }
     }
@@ -53,7 +53,7 @@ public class CustomerDAOImpl implements CustomerDAO {
             listOfCustomers =  getAllCustomersResultSet(resultSet);
         } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.error("Error getting all customers from database"+e);
+            LOGGER.error("Error getting all customers from database",e);
         }
         return listOfCustomers;
     }
@@ -93,7 +93,7 @@ public class CustomerDAOImpl implements CustomerDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.error("Error getting a customer from database"+e);
+            LOGGER.error("Error getting a customer from database",e);
         }
         return  customer.getCustomerId();
     }
@@ -105,7 +105,7 @@ public class CustomerDAOImpl implements CustomerDAO {
             statement.execute();
             } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.error("Error blocking a customer"+e);
+            LOGGER.error("Error blocking a customer",e);
         }
     }
     @Override
@@ -120,7 +120,7 @@ public class CustomerDAOImpl implements CustomerDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.error("Error checking a login and password from database"+e);
+            LOGGER.error("Error checking a login and password from database",e);
         }
         return true;
     }
@@ -134,7 +134,7 @@ public class CustomerDAOImpl implements CustomerDAO {
             path = getPathByRole(resultSet);
         }  catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.error("Error checking role of user in database"+e);
+            LOGGER.error("Error checking role of user in database",e);
         }
         return path;
     }
@@ -167,7 +167,7 @@ public class CustomerDAOImpl implements CustomerDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.error("Error checking status of access"+e);
+            LOGGER.error("Error checking status of access",e);
         }
         return false;
     }
