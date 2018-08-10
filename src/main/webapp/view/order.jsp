@@ -13,7 +13,7 @@
     <title>Title</title>
 </head>
 <body>
-<c:import  url="/blocks/header.jsp"/>
+<c:import  url="/block/header.jsp"/>
 <div id="wrap">
     <div id="showUsers">
         <table border="1">

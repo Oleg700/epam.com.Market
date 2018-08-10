@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<c:import  url="/blocks/header.jsp"/>
+<c:import  url="/block/header.jsp"/>
 ${wrongAction}
 <c:set var="login" value="${login}" scope="request"/>
 <c:set var="name" value="${name}" scope="request"/>
@@ -29,7 +29,7 @@ ${wrongAction}
 <div id="wrapper">
     <div id="column">
         <div id="bigArticle">
-               <img src="/images/img2.jpg">
+               <img src="/image/img2.jpg">
             <h2><fmt:message key="menu.notebooks" /></h2>
             <p><fmt:message key="menu.advertismentNotebooks" /></p>
                <form method="POST" action="controller">
@@ -41,7 +41,7 @@ ${wrongAction}
         <div class="clear"><br></div>
         <div class="article">
 
-                <img src="../images/img5.jpg">
+                <img src="../image/img5.jpg">
                 <h2><fmt:message key="menu.phones" /></h2>
             <p><fmt:message key="menu.advertismentPhones" /></p>
             <form method="POST" action="controller">
@@ -51,7 +51,7 @@ ${wrongAction}
             </form>
         </div>
         <div class="article">
-            <img src="/images/img3.jpg">
+            <img src="/image/img3.jpg">
             <h2><fmt:message key="menu.cameras" /></h2>
             <p><fmt:message key="menu.advertismentCameras" /></p>
             <form method="POST" action="controller">
@@ -63,6 +63,6 @@ ${wrongAction}
     </div>
 </div>
 </div>
-<c:import  url="/blocks/footerMenu.jsp"/>
+<c:import  url="/block/footerMenu.jsp"/>
 </body>
 </html>

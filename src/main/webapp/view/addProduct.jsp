@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<c:import  url="/blocks/header.jsp"/>
+<c:import  url="/block/header.jsp"/>
 <h1 id="titleAddProduct">
     <fmt:message key="addProduct.addproduct" />
 </h1>
@@ -46,6 +46,6 @@
     </form>
 </div>
 </div>
-<c:import  url="/blocks/footer.jsp"/>
+<c:import  url="/block/footer.jsp"/>
 </body>
 </html>

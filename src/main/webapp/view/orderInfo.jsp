@@ -6,12 +6,12 @@
     <title>OrderInfo</title>
 </head>
 <body>
-<c:import  url="/blocks/header.jsp"/>
+<c:import  url="/block/header.jsp"/>
 <div id="wrap">
 <div id="orderInfo">
    ${login}<fmt:message key="orderInfo.message" />
 </div>
 </div>
-<c:import  url="/blocks/footer.jsp"/>
+<c:import  url="/block/footer.jsp"/>
 </body>
 </html>

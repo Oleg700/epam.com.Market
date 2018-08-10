@@ -31,7 +31,7 @@
         <input type="hidden" name="language" value="language_en_EN">
         <input type="hidden" name="languageLocale" value="en_US">
         <input type="hidden" name="languageId" value="1">
-        <input type="image" name="submit" src="/images/language_en_EN.png" alt="Submit" />
+        <input type="image" name="submit" src="/image/language_en_EN.png" alt="Submit" />
     </form>
     </div>
 
@@ -41,7 +41,7 @@
         <input type="hidden" name="language" value="language_ru_RU">
         <input type="hidden" name="languageLocale" value="ru_RU">
         <input type="hidden" name="languageId" value="2">
-        <input type="image" name="submit" src="/images/language_ru_RU.png" alt="Submit" />
+        <input type="image" name="submit" src="/image/language_ru_RU.png" alt="Submit" />
     </form>
     </div>
     <div id="reg">

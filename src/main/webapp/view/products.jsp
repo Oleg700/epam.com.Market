@@ -6,7 +6,7 @@
     <title>Products</title>
 </head>
 <body>
-<c:import  url="/blocks/header.jsp"/>
+<c:import  url="/block/header.jsp"/>
 <div id="wrap">
 <c:forEach items="${listOfProducts}" var="product">
 <div id="products">
@@ -24,6 +24,6 @@
     <div id="separation"></div>
 </c:forEach>
 </div>
-<c:import  url="/blocks/footerMenu.jsp"/>
+<c:import  url="/block/footerMenu.jsp"/>
 </body>
 </html>

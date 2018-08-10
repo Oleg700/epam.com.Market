@@ -29,7 +29,7 @@ public class OrderDAOImpl implements OrderDAO {
          addOrderStatement(statement, order);
         } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.info("SQL exception in class OrderDAOImpl method add(Order order)");
+            LOGGER.error("Error adding an order to database"+e);
         }
     }
 
@@ -54,7 +54,7 @@ public class OrderDAOImpl implements OrderDAO {
             listOfOrders = getAllOrdersResultSet(resultSet);
         } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.info("SQL exception in class OrderDAOImpl method getAllOrders()");
+            LOGGER.error("Error getting all orders from database"+e);
         }
         return listOfOrders;
     }

@@ -1,5 +1,5 @@
-
 package com.epam.market.controller;
+
 import com.epam.market.command.ActionCommand;
 import com.epam.market.factory.ActionFactory;
 import com.epam.market.propertymenager.ConfigurationManager;

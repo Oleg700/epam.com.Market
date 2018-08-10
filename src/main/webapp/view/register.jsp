@@ -6,7 +6,7 @@
     <title>Registration</title>
 </head>
 <body>
-<c:import  url="/blocks/header.jsp"/>
+<c:import  url="/block/header.jsp"/>
 <div id="wrap">
 <div id="registerTitle"> <fmt:message key="register.register" /></div>
 <form name="RegisterForm" method="POST" action="controller">
@@ -31,6 +31,6 @@
     </div>
 </form>
 </div>
-<c:import  url="/blocks/footer.jsp"/>
+<c:import  url="/block/footer.jsp"/>
 </body>
 </html>

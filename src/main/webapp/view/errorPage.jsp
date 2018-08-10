@@ -5,10 +5,10 @@
     <title>Error</title>
 </head>
 <body>
-<c:import  url="/blocks/header.jsp"/>
+<c:import  url="/block/header.jsp"/>
 <div id="wrap">
 ${message.nullpage}
 </div>
-<c:import  url="/blocks/footer.jsp"/>
+<c:import  url="/block/footer.jsp"/>
 </body>
 </html>

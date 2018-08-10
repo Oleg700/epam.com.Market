@@ -34,7 +34,6 @@ public class RegistrationCommand implements  ActionCommand  {
     }
 
     private void registrateCustomer(HttpServletRequest request){
-        PasswordHash passwordHash = new PasswordHash();
         CustomerDAOImpl daoCustomer = new CustomerDAOImpl();
         Customer customer= new Customer();
         String name = request.getParameter(PARAM_NAME_NAME);
@@ -44,7 +43,7 @@ public class RegistrationCommand implements  ActionCommand  {
         String email = request.getParameter(PARAM_NAME_EMAIL);
         String access = request.getParameter(PARAM_NAME_ACCESS);
         String role = request.getParameter(PARAM_NAME_ROLE);
-        int hashPassword = passwordHash.hashPassword(pass);
+        int hashPassword = PasswordHash.hashPassword(pass);
         customer.setName(name)
                 .setSurname(surname)
                 .setLogin(login)

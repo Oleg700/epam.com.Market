@@ -10,7 +10,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-
 public class ProductDAOImpl implements ProductDAO {
     private static final String QUERY_ADD_PRODUCT = "INSERT INTO `product`(`price`,`category_id`, producer_id) VALUES( ?,?,?)";
     private static final String QUERY_GET_lAST_PRODUCT = "SELECT product_id FROM product ORDER BY product_id DESC LIMIT 1;";
@@ -26,7 +25,7 @@ public class ProductDAOImpl implements ProductDAO {
             connection.commit();
         } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.info("SQL exception in class ProductDAOImpl method addProductTranslate(Product product, ProductTranslation productsTranslationEn, ProductTranslation productsTranslationRu)");
+            LOGGER.error("Error adding a product to database"+e);
         }
     }
 
@@ -41,7 +40,7 @@ public class ProductDAOImpl implements ProductDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.info("SQL exception in class ProductDAOImpl method  getLastProductId()");
+            LOGGER.error("Error getting a a last porduct id from database"+e);
         }
         return lastId;
     }
@@ -54,9 +53,9 @@ public class ProductDAOImpl implements ProductDAO {
             statement.setInt(2, product.getCategoryId());
             statement.setInt(3, product.getProducerId());
             statement.execute();
-        } catch (SQLException e1) {
-            e1.printStackTrace();
-            LOGGER.info("SQL exception in class ProductDAOImpl method add(Product product)");
+        } catch (SQLException e) {
+            e.printStackTrace();
+            LOGGER.error("Error adding a product to database"+e);
         }
     }
 }

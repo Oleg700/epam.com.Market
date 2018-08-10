@@ -28,7 +28,8 @@ public class CustomerDAOImpl implements CustomerDAO {
             addCustomerStatement(statement, customer);
         } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.info("SQL exception in class CustomerDAOIMpl method  add(Customer customer)");
+            LOGGER.error("Error adding a customer to database"+e);
+
         }
     }
 
@@ -52,7 +53,7 @@ public class CustomerDAOImpl implements CustomerDAO {
             listOfCustomers =  getAllCustomersResultSet(resultSet);
         } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.info("SQL exception in class CustomerDAOIMpl method  getAllCustomers()");
+            LOGGER.error("Error getting all customers from database"+e);
         }
         return listOfCustomers;
     }
@@ -92,7 +93,7 @@ public class CustomerDAOImpl implements CustomerDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.info("SQL exception in class CustomerDAOIMpl method getCustomerIDByLogin()");
+            LOGGER.error("Error getting a customer from database"+e);
         }
         return  customer.getCustomerId();
     }
@@ -102,9 +103,9 @@ public class CustomerDAOImpl implements CustomerDAO {
              PreparedStatement statement = connection.prepareStatement(QUERY_BLOCK_CUSTOMER)) {
             statement.setString(1, login);
             statement.execute();
-            } catch (SQLException e1) {
-            e1.printStackTrace();
-            LOGGER.info("SQL exception in class CustomerDAOIMpl method blockCustomerByLogin");
+            } catch (SQLException e) {
+            e.printStackTrace();
+            LOGGER.error("Error blocking a customer"+e);
         }
     }
     @Override
@@ -119,7 +120,7 @@ public class CustomerDAOImpl implements CustomerDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.info("SQL exception in class CustomerDAOIMpl method isLoginValid(String login, int password)");
+            LOGGER.error("Error checking a login and password from database"+e);
         }
         return true;
     }
@@ -133,7 +134,7 @@ public class CustomerDAOImpl implements CustomerDAO {
             path = getPathByRole(resultSet);
         }  catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.info("SQL exception in class CustomerDAOIMpl method isRoleValid(String login)");
+            LOGGER.error("Error checking role of user in database"+e);
         }
         return path;
     }
@@ -166,7 +167,7 @@ public class CustomerDAOImpl implements CustomerDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            LOGGER.info("SQL exception in class CustomerDAOIMpl method isAccessValid(String login)");
+            LOGGER.error("Error checking status of access"+e);
         }
         return false;
     }

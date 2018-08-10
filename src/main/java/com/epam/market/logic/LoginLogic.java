@@ -1,8 +1,6 @@
 package com.epam.market.logic;
 import com.epam.market.dao.CustomerDAO;
 
-import javax.servlet.http.HttpServletRequest;
-
 public class LoginLogic {
     private CustomerDAO customerDAO;
 

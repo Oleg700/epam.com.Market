@@ -24,11 +24,10 @@ public class LoginCommand implements ActionCommand {
 
     private String getPathByLogin(HttpServletRequest request) {
         String path = null;
-        PasswordHash passwordHash = new PasswordHash();
         LoginLogic loginLogic = new LoginLogic(new CustomerDAOImpl());
         String login = request.getParameter(PARAM_NAME_LOGIN);
         String password = request.getParameter(PARAM_NAME_PASSWORD);
-        int hashPassword = passwordHash.hashPassword(password);
+        int hashPassword = PasswordHash.hashPassword(password);
         if (loginLogic.isLoginValid(login, hashPassword)) {
             if (!loginLogic.isAccessValid(login)) {
                 request.setAttribute(ATTRIBUTE_NAME_ACCESS_ERROR, MessageManager.getProperty(ATTRIBUTE_NAME_ACCESS_ERROR));

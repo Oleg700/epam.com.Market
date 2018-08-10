@@ -10,7 +10,7 @@
     <title>Login</title>
 </head>
 <body>
-<c:import  url="/blocks/header.jsp"/>
+<c:import  url="/block/header.jsp"/>
 <div id="wrap">
 <form name="LoginForm" method="POST" action="controller">
     <div id="loginPage">
@@ -27,6 +27,6 @@
     ${errorLogin}
 </div>
 </div>
-<c:import  url="/blocks/footer.jsp"/>
+<c:import  url="/block/footer.jsp"/>
 </body>
 </html>

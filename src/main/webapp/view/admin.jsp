@@ -6,7 +6,7 @@
     <title>AdminMenu</title>
 </head>
 
-<c:import  url="/blocks/header.jsp"/>
+<c:import  url="/block/header.jsp"/>
 <div id="wrap">
 <div id="adminblocks">
     <form  method="POST" action="controller">
@@ -45,6 +45,6 @@
 </c:forEach>
 </div>
 </div>
-<c:import  url="/blocks/footer.jsp"/>
+<c:import  url="/block/footer.jsp"/>
 </body>
 </html>
