@@ -22,12 +22,12 @@ Weight	148 g (5.22 oz)
 Build	Front/back glass, aluminum frame
 SIM	Nano-SIM");
 
-INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (1, 2,"Iphone 8", "Размер экрана дюйм: 4.7
- Разрешение экрана: 1334 x 750
- Тип матрицы: IPS Retina
-Объем оперативной памяти: 2 Гб
-Объем встроенной памяти: 256 Гб
-Модель процессора: A11 Bionic");
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (1, 2,"Iphone 8", "ГђГ Г§Г¬ГҐГ° ГЅГЄГ°Г Г­Г  Г¤ГѕГ©Г¬: 4.7
+ ГђГ Г§Г°ГҐГёГҐГ­ГЁГҐ ГЅГЄГ°Г Г­Г : 1334 x 750
+ Г’ГЁГЇ Г¬Г ГІГ°ГЁГ¶Г»: IPS Retina
+ГЋГЎГєГҐГ¬ Г®ГЇГҐГ°Г ГІГЁГўГ­Г®Г© ГЇГ Г¬ГїГІГЁ: 2 ГѓГЎ
+ГЋГЎГєГҐГ¬ ГўГ±ГІГ°Г®ГҐГ­Г­Г®Г© ГЇГ Г¬ГїГІГЁ: 256 ГѓГЎ
+ГЊГ®Г¤ГҐГ«Гј ГЇГ°Г®Г¶ГҐГ±Г±Г®Г°Г : A11 Bionic");
 
 
 INSERT INTO product (price,category_id, producer_id ) VALUES(200000,2,1);
@@ -37,11 +37,11 @@ Size 4.7 inches, 60.9 cm2 (~65.4% screen-to-body ratio)
 Resolution 750 x 1334 pixels, 16:9 ratio (~326 ppi density)
 Multitouch Yes");
 
-INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (2, 2,"Iphone 7", "Размер экрана, дюйм: 4.0
-Разрешение экрана: 1136 x 640 [16:9]
-Тип матрицы: IPS, Retina
-Объем оперативной памяти: 2 Гб
-Объем встроенной памяти: 32 Гб");
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (2, 2,"Iphone 7", "ГђГ Г§Г¬ГҐГ° ГЅГЄГ°Г Г­Г , Г¤ГѕГ©Г¬: 4.0
+ГђГ Г§Г°ГҐГёГҐГ­ГЁГҐ ГЅГЄГ°Г Г­Г : 1136 x 640 [16:9]
+Г’ГЁГЇ Г¬Г ГІГ°ГЁГ¶Г»: IPS, Retina
+ГЋГЎГєГҐГ¬ Г®ГЇГҐГ°Г ГІГЁГўГ­Г®Г© ГЇГ Г¬ГїГІГЁ: 2 ГѓГЎ
+ГЋГЎГєГҐГ¬ ГўГ±ГІГ°Г®ГҐГ­Г­Г®Г© ГЇГ Г¬ГїГІГЁ: 32 ГѓГЎ");
 
 
 INSERT INTO product (price,category_id, producer_id ) VALUES(250000,2,2);
@@ -50,11 +50,11 @@ INSERT INTO product_translation(product_id, language_id, product_title, descript
 Size 4.7 inches, 60.9 cm2 (~65.4% screen-to-body ratio)
 Resolution 750 x 1334 pixels, 16:9 ratio (~326 ppi density)");
 
-INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (3, 2,"Samsung Galaxy J1", "Размер экрана, дюйм: 4.0
-Разрешение экрана: 1136 x 640 [16:9]
-Тип матрицы: IPS, Retina
-Объем оперативной памяти: 4 Гб
-Объем встроенной памяти: 64 Гб");
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (3, 2,"Samsung Galaxy J1", "ГђГ Г§Г¬ГҐГ° ГЅГЄГ°Г Г­Г , Г¤ГѕГ©Г¬: 4.0
+ГђГ Г§Г°ГҐГёГҐГ­ГЁГҐ ГЅГЄГ°Г Г­Г : 1136 x 640 [16:9]
+Г’ГЁГЇ Г¬Г ГІГ°ГЁГ¶Г»: IPS, Retina
+ГЋГЎГєГҐГ¬ Г®ГЇГҐГ°Г ГІГЁГўГ­Г®Г© ГЇГ Г¬ГїГІГЁ: 4 ГѓГЎ
+ГЋГЎГєГҐГ¬ ГўГ±ГІГ°Г®ГҐГ­Г­Г®Г© ГЇГ Г¬ГїГІГЁ: 64 ГѓГЎ");
 
 
 
@@ -64,11 +64,11 @@ INSERT INTO product_translation(product_id, language_id, product_title, descript
 8GB RAM (upgradeable to 32GB)
 NVIDIA GeForce GTX 1050 with 4GB GDDR5");
 
-INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (4, 2,"Dell E72", "Процессор: Intel Core i5
-Модель процессора: 5300U
-Частота процессора, ГГц: 2.3
-Объем оперативной памяти: 8 Гб
-SSD: 256 Гб");
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (4, 2,"Dell E72", "ГЏГ°Г®Г¶ГҐГ±Г±Г®Г°: Intel Core i5
+ГЊГ®Г¤ГҐГ«Гј ГЇГ°Г®Г¶ГҐГ±Г±Г®Г°Г : 5300U
+Г—Г Г±ГІГ®ГІГ  ГЇГ°Г®Г¶ГҐГ±Г±Г®Г°Г , ГѓГѓГ¶: 2.3
+ГЋГЎГєГҐГ¬ Г®ГЇГҐГ°Г ГІГЁГўГ­Г®Г© ГЇГ Г¬ГїГІГЁ: 8 ГѓГЎ
+SSD: 256 ГѓГЎ");
 
 
 
@@ -78,11 +78,11 @@ INSERT INTO product_translation(product_id, language_id, product_title, descript
 8GB RAM (upgradeable to 32GB)
 NVIDIA GeForce GTX 1050 with 4GB GDDR5");
 
-INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (5, 2,"Lenovo Yoga 720", "Процессор: Intel Core i7
-Модель процессора: 7700HQ
-Частота процессора, ГГц: 2.8
-Объем оперативной памяти: 8 Гб
-SSD: 512 Гб");
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (5, 2,"Lenovo Yoga 720", "ГЏГ°Г®Г¶ГҐГ±Г±Г®Г°: Intel Core i7
+ГЊГ®Г¤ГҐГ«Гј ГЇГ°Г®Г¶ГҐГ±Г±Г®Г°Г : 7700HQ
+Г—Г Г±ГІГ®ГІГ  ГЇГ°Г®Г¶ГҐГ±Г±Г®Г°Г , ГѓГѓГ¶: 2.8
+ГЋГЎГєГҐГ¬ Г®ГЇГҐГ°Г ГІГЁГўГ­Г®Г© ГЇГ Г¬ГїГІГЁ: 8 ГѓГЎ
+SSD: 512 ГѓГЎ");
 
 
 
@@ -95,10 +95,10 @@ INSERT INTO product_translation(product_id, language_id, product_title, descript
 19-point AF system (all cross-type)
 100% viewfinder coverage");
 
-INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (6, 2,"Canon EOS-7D Body", "Тип оборудования: Зеркальный (DSLR) фотоаппарат
-Тип матрицы: СMOS
-Видеорежим: Есть
-Размер ЖК-дисплея: 3.0");
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (6, 2,"Canon EOS-7D Body", "Г’ГЁГЇ Г®ГЎГ®Г°ГіГ¤Г®ГўГ Г­ГЁГї: Г‡ГҐГ°ГЄГ Г«ГјГ­Г»Г© (DSLR) ГґГ®ГІГ®Г ГЇГЇГ Г°Г ГІ
+Г’ГЁГЇ Г¬Г ГІГ°ГЁГ¶Г»: Г‘MOS
+Г‚ГЁГ¤ГҐГ®Г°ГҐГ¦ГЁГ¬: Г…Г±ГІГј
+ГђГ Г§Г¬ГҐГ° Г†ГЉ-Г¤ГЁГ±ГЇГ«ГҐГї: 3.0");
 
 
 
@@ -113,11 +113,11 @@ INSERT INTO product_translation(product_id, language_id, product_title, descript
 19-point AF system (all cross-type)
 100% viewfinder coverage");
 
-INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (7, 2,"Nikon D3400 Kit", "Тип оборудования: Зеркальный (DSLR) фотоаппарат
-Тип матрицы: СMOS
-Размер MOS/CMOS матрицы: 23.5 х 15.6 мм
-Светосила: f/3.5 - 5.6
-Кратность оптического увеличения: 3.0");
+INSERT INTO product_translation(product_id, language_id, product_title, description) VALUES (7, 2,"Nikon D3400 Kit", "Г’ГЁГЇ Г®ГЎГ®Г°ГіГ¤Г®ГўГ Г­ГЁГї: Г‡ГҐГ°ГЄГ Г«ГјГ­Г»Г© (DSLR) ГґГ®ГІГ®Г ГЇГЇГ Г°Г ГІ
+Г’ГЁГЇ Г¬Г ГІГ°ГЁГ¶Г»: Г‘MOS
+ГђГ Г§Г¬ГҐГ° MOS/CMOS Г¬Г ГІГ°ГЁГ¶Г»: 23.5 Гµ 15.6 Г¬Г¬
+Г‘ГўГҐГІГ®Г±ГЁГ«Г : f/3.5 - 5.6
+ГЉГ°Г ГІГ­Г®Г±ГІГј Г®ГЇГІГЁГ·ГҐГ±ГЄГ®ГЈГ® ГіГўГҐГ«ГЁГ·ГҐГ­ГЁГї: 3.0");
 
 
 
@@ -129,5 +129,5 @@ INSERT INTO product_translation(product_id, language_id, product_title, descript
 
 
 
-INSERT INTO customer (customer_name, customer_surname, login, password, email, access, role) VALUES("Semen", "Semenov","user", "3599307", "user@mail.ru", "allowed","user"); 
-INSERT INTO customer (customer_name, customer_surname, login, password, email, access, role) VALUES("Pavel", "Petrov","admin", "92668751", "pavel14@mail.ru", "allowed","admin");
+INSERT INTO customer (customer_name, customer_surname, login, password, email, access, role) VALUES("Semen", "Semenov","user", "user", "user@mail.ru", "allowed","user"); 
+INSERT INTO customer (customer_name, customer_surname, login, password, email, access, role) VALUES("Pavel", "Petrov","admin", "admin", "pavel14@mail.ru", "allowed","admin");
