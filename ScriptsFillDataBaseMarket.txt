@@ -129,5 +129,5 @@ INSERT INTO product_translation(product_id, language_id, product_title, descript
 
 
 
-INSERT INTO customer (customer_name, customer_surname, login, password, email, access, role) VALUES("Semen", "Semenov","user", "user", "user@mail.ru", "allowed","user"); 
-INSERT INTO customer (customer_name, customer_surname, login, password, email, access, role) VALUES("Pavel", "Petrov","admin", "admin", "pavel14@mail.ru", "allowed","admin");
+INSERT INTO customer (customer_name, customer_surname, login, password, email, access, role) VALUES("Semen", "Semenov","user", "3599307", "user@mail.ru", "allowed","user"); 
+INSERT INTO customer (customer_name, customer_surname, login, password, email, access, role) VALUES("Pavel", "Petrov","admin", "92668751", "pavel14@mail.ru", "allowed","admin");
