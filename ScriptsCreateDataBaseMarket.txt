@@ -46,7 +46,7 @@ PRIMARY KEY(product_id, language_id),
 FOREIGN KEY(product_id) REFERENCES product(product_id),
 FOREIGN KEY(language_id) REFERENCES language(language_id));
 
-CREATE TABLE order(order_id INT NOT NULL AUTO_INCREMENT,
+CREATE TABLE orders(order_id INT NOT NULL AUTO_INCREMENT,
 customer_id INT,
 product_id INT,
 order_date VARCHAR(30),
